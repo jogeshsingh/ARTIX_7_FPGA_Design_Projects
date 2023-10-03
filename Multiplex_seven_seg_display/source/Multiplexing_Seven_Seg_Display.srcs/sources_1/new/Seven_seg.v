@@ -43,7 +43,8 @@ always @(*)
       4'b1100: seg = 7'b1000_110;  //C//
       4'b1101: seg = 7'b0100_001;   //D//
       4'b1110: seg = 7'b0000_110;   //E//
-      default : seg = 7'b001_110;  //F//
+      4'b1111: seg = 7'b1001_110;   //F//       
+      default : seg = 7'b0000_000;
       endcase
       //default : seg = 7'b0000_0000;
    end   
