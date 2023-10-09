@@ -1,0 +1,36 @@
+# ERROR: No extended dataflow license exists
+# do {testbench_async_fifo_simulate.do}
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -lib xil_defaultlib xil_defaultlib.testbench_async_fifo xil_defaultlib.glbl 
+# Start time: 13:17:40 on Oct 09,2023
+# Loading xil_defaultlib.testbench_async_fifo
+# Loading xil_defaultlib.Top_async_fifo
+# Loading xil_defaultlib.sync_read_pointer
+# Loading xil_defaultlib.sync_write_pointer
+# Loading xil_defaultlib.write_pointer_logic
+# Loading xil_defaultlib.read_pointer_logic
+# Loading xil_defaultlib.single_port_sync_ram
+# Loading xil_defaultlib.glbl
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+add wave -position end sim:/testbench_async_fifo/DUT_RTL_ASYNC_FIFO/BRAM_UO_1/*
+restart
+run -all
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# End time: 13:29:11 on Oct 09,2023, Elapsed time: 0:11:31
+# Errors: 0, Warnings: 0
