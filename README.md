@@ -4,6 +4,8 @@ This repository contains some introductory level course review about learning ab
 # Introduction
  What is an FPGA?
  
+ ![Modelsim_write](https://github.com/jogeshsingh/ARTIX_7_FPGA_Design_Projects/assets/98607828/20fc527f-ffe8-40cf-9c87-2dfa7a106a3e)
+
 
 # ARTIX_7_FPGA_Design_Projects
 
