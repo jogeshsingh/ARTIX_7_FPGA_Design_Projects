@@ -1,0 +1,295 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x5988EB38C108C90A",
+      "device": "xc7a35tftg256-1",
+      "gen_directory": "../../../../Debuggin_various_IPs.gen/sources_1/bd/Spi_interface_debug",
+      "name": "Spi_interface_debug",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2"
+    },
+    "design_tree": {
+      "c_counter_binary_0": "",
+      "xlconstant_0": "",
+      "ila_0": "",
+      "proc_sys_reset_0": "",
+      "Top_Spi_Master_0": ""
+    },
+    "ports": {
+      "i_clk": {
+        "type": "clk",
+        "direction": "I"
+      },
+      "data_valid": {
+        "direction": "I"
+      },
+      "rst": {
+        "type": "rst",
+        "direction": "I"
+      },
+      "o_sclk": {
+        "type": "data",
+        "direction": "O"
+      },
+      "byte_count": {
+        "type": "data",
+        "direction": "O",
+        "left": "2",
+        "right": "0"
+      },
+      "chip_sel": {
+        "type": "data",
+        "direction": "O"
+      },
+      "p_state_n": {
+        "type": "data",
+        "direction": "O",
+        "left": "2",
+        "right": "0"
+      },
+      "mosi_out": {
+        "type": "data",
+        "direction": "O"
+      },
+      "slave_data": {
+        "type": "data",
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      }
+    },
+    "components": {
+      "c_counter_binary_0": {
+        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
+        "xci_name": "Spi_interface_debug_c_counter_binary_0_0",
+        "xci_path": "ip\\Spi_interface_debug_c_counter_binary_0_0\\Spi_interface_debug_c_counter_binary_0_0.xci",
+        "inst_hier_path": "c_counter_binary_0",
+        "parameters": {
+          "CE": {
+            "value": "true"
+          },
+          "Increment_Value": {
+            "value": "8"
+          },
+          "Output_Width": {
+            "value": "8"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "Spi_interface_debug_xlconstant_0_0",
+        "xci_path": "ip\\Spi_interface_debug_xlconstant_0_0\\Spi_interface_debug_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          }
+        }
+      },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "xci_name": "Spi_interface_debug_ila_0_0",
+        "xci_path": "ip\\Spi_interface_debug_ila_0_0\\Spi_interface_debug_ila_0_0.xci",
+        "inst_hier_path": "ila_0",
+        "parameters": {
+          "C_DATA_DEPTH": {
+            "value": "4096"
+          },
+          "C_EN_STRG_QUAL": {
+            "value": "1"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "6"
+          },
+          "C_PROBE0_TYPE": {
+            "value": "1"
+          },
+          "C_PROBE1_TYPE": {
+            "value": "1"
+          },
+          "C_PROBE2_TYPE": {
+            "value": "1"
+          },
+          "C_PROBE2_WIDTH": {
+            "value": "8"
+          },
+          "C_PROBE4_TYPE": {
+            "value": "1"
+          },
+          "C_PROBE4_WIDTH": {
+            "value": "3"
+          },
+          "C_PROBE5_TYPE": {
+            "value": "1"
+          },
+          "C_PROBE5_WIDTH": {
+            "value": "3"
+          },
+          "C_TRIGIN_EN": {
+            "value": "false"
+          }
+        }
+      },
+      "proc_sys_reset_0": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "xci_name": "Spi_interface_debug_proc_sys_reset_0_0",
+        "xci_path": "ip\\Spi_interface_debug_proc_sys_reset_0_0\\Spi_interface_debug_proc_sys_reset_0_0.xci",
+        "inst_hier_path": "proc_sys_reset_0"
+      },
+      "Top_Spi_Master_0": {
+        "vlnv": "xilinx.com:module_ref:Top_Spi_Master:1.0",
+        "xci_name": "Spi_interface_debug_Top_Spi_Master_0_0",
+        "xci_path": "ip\\Spi_interface_debug_Top_Spi_Master_0_0\\Spi_interface_debug_Top_Spi_Master_0_0.xci",
+        "inst_hier_path": "Top_Spi_Master_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Top_Spi_Master",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "i_rstn",
+                "value_src": "constant"
+              }
+            }
+          },
+          "i_rstn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "i_data": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "i_data_valid": {
+            "direction": "I"
+          },
+          "i_sel_mode": {
+            "direction": "I"
+          },
+          "o_SSCLK": {
+            "direction": "O"
+          },
+          "byte_transfer": {
+            "direction": "O"
+          },
+          "byte_cnt": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "chip_sel": {
+            "direction": "O"
+          },
+          "mosi_out": {
+            "direction": "O"
+          },
+          "debug_p_state": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Top_Spi_Master_0_byte_cnt": {
+        "ports": [
+          "Top_Spi_Master_0/byte_cnt",
+          "ila_0/probe5",
+          "byte_count"
+        ]
+      },
+      "Top_Spi_Master_0_chip_sel": {
+        "ports": [
+          "Top_Spi_Master_0/chip_sel",
+          "ila_0/probe3",
+          "chip_sel"
+        ]
+      },
+      "Top_Spi_Master_0_debug_p_state": {
+        "ports": [
+          "Top_Spi_Master_0/debug_p_state",
+          "ila_0/probe4",
+          "p_state_n"
+        ]
+      },
+      "Top_Spi_Master_0_mosi_out": {
+        "ports": [
+          "Top_Spi_Master_0/mosi_out",
+          "ila_0/probe1",
+          "mosi_out"
+        ]
+      },
+      "Top_Spi_Master_0_o_SSCLK": {
+        "ports": [
+          "Top_Spi_Master_0/o_SSCLK",
+          "ila_0/probe0",
+          "o_sclk"
+        ]
+      },
+      "Top_Spi_Master_0_slave_data_out": {
+        "ports": [
+          "ila_0/probe2",
+          "slave_data"
+        ]
+      },
+      "c_counter_binary_0_Q": {
+        "ports": [
+          "c_counter_binary_0/Q",
+          "Top_Spi_Master_0/i_data"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "i_clk",
+          "ila_0/clk",
+          "c_counter_binary_0/CLK",
+          "proc_sys_reset_0/slowest_sync_clk",
+          "Top_Spi_Master_0/i_clk"
+        ]
+      },
+      "i_data_valid_0_1": {
+        "ports": [
+          "data_valid",
+          "c_counter_binary_0/CE",
+          "Top_Spi_Master_0/i_data_valid"
+        ]
+      },
+      "proc_sys_reset_0_peripheral_aresetn": {
+        "ports": [
+          "proc_sys_reset_0/peripheral_aresetn",
+          "Top_Spi_Master_0/i_rstn"
+        ]
+      },
+      "resetn_0_1": {
+        "ports": [
+          "rst",
+          "proc_sys_reset_0/ext_reset_in"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "Top_Spi_Master_0/i_sel_mode"
+        ]
+      }
+    }
+  }
+}

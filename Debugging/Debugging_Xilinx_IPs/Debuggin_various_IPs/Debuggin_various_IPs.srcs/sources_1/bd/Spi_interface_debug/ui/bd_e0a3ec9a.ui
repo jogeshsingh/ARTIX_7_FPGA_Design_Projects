@@ -1,0 +1,40 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.774",
+   "Default View_TopLeft":"-173,1",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_i_clk -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
+preplace port port-id_data_valid -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace port port-id_rst -pg 1 -lvl 0 -x 0 -y 380 -defaultsOSRD
+preplace port port-id_o_sclk -pg 1 -lvl 4 -x 1000 -y 290 -defaultsOSRD
+preplace port port-id_chip_sel -pg 1 -lvl 4 -x 1000 -y 350 -defaultsOSRD
+preplace port port-id_mosi_out -pg 1 -lvl 4 -x 1000 -y 50 -defaultsOSRD
+preplace portBus byte_count -pg 1 -lvl 4 -x 1000 -y 20 -defaultsOSRD
+preplace portBus p_state_n -pg 1 -lvl 4 -x 1000 -y 380 -defaultsOSRD
+preplace portBus slave_data -pg 1 -lvl 4 -x 1000 -y 320 -defaultsOSRD
+preplace inst c_counter_binary_0 -pg 1 -lvl 1 -x 200 -y 120 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 200 -y 260 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 3 -x 860 -y 170 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 200 -y 400 -defaultsOSRD
+preplace inst Top_Spi_Master_0 -pg 1 -lvl 2 -x 550 -y 220 -defaultsOSRD
+preplace netloc Top_Spi_Master_0_byte_cnt 1 2 2 730 20 NJ
+preplace netloc Top_Spi_Master_0_chip_sel 1 2 2 710 40 960J
+preplace netloc Top_Spi_Master_0_debug_p_state 1 2 2 740 380 NJ
+preplace netloc Top_Spi_Master_0_mosi_out 1 2 2 700 30 970J
+preplace netloc Top_Spi_Master_0_o_SSCLK 1 2 2 720 50 950J
+preplace netloc Top_Spi_Master_0_slave_data_out 1 2 1 N 170
+preplace netloc c_counter_binary_0_Q 1 1 1 380 120n
+preplace netloc clk_wiz_0_clk_out1 1 0 3 20 50 390 110 NJ
+preplace netloc i_data_valid_0_1 1 0 2 30 200 370J
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 1 390 200n
+preplace netloc resetn_0_1 1 0 1 NJ 380
+preplace netloc xlconstant_0_dout 1 1 1 NJ 260
+levelinfo -pg 1 0 200 550 860 1000
+pagesize -pg 1 -db -bbox -sgen -120 0 1150 500
+"
+}
+{
+   "da_clkrst_cnt":"1"
+}
