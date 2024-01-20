@@ -19,6 +19,7 @@
        - `LED_CHASING_Circuit`
        - `Multiplex_Seven_Seg_Display`
        - `LED_BLINKING`
+       - `Seven_Seg_Display`
            
  
 
