@@ -17,7 +17,8 @@
        - `SPI_ADXL345_INTERFACE` - `Continue`
        - `I2C_ADXL345_INTERFCACE` - `Continue`
        - `LED_CHASING_Circuit`
-       - 
+       - `Multiplex_Seven_Seg_Display`
+       - `LED_BLINKING`
            
  
 
