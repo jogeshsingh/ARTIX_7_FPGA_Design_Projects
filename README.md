@@ -9,7 +9,14 @@
        - This repository contains FPGA Projects done on `Xilinx VIVADO` targeting `EDGE ARTIX-7(35T)` FPGA Board
        - `NOTE` These Projects could be used on other FPGA Boards as well , in that yu just have to change the `Board_Details` in `Settings` in VIVADO
        - It contains Verilog HDL files , including basic unit testbenches for verifying the design and it has been tested 
-         on `EDGE ARTIX-7 FPGA` 
+         on `EDGE ARTIX-7 FPGA`
+
+       - `UART_TX`
+       - `UART_RX`
+       - `UART_RX_SEVEN_SEG_DISPLAY`
+       - `SPI_ADXL345_INTERFACE` - `Continue`
+       - `I2C_ADXL345_INTERFCACE` - `Continue`
+           
  
 
 
